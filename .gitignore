@@ -1,0 +1,9 @@
+**/data/
+**/models/
+**/img/
+*task*
+**/__pycache__*
+*bkp
+**/.env/
+**/Logs/
+

@@ -5,9 +5,7 @@
 1. Необходимо склонировать текущий репозиторий в папку своего проекта: перейти в каталог, где будет лежать проект и выполнить команду:  
    ```git clone https://github.com/AnatolyDolgih/registrator.git```  
    (если не установлена утилита git, то ее следует установть - [инструкция](https://git-scm.com/book/ru/v2/%D0%92%D0%B2%D0%B5%D0%B4%D0%B5%D0%BD%D0%B8%D0%B5-%D0%A3%D1%81%D1%82%D0%B0%D0%BD%D0%BE%D0%B2%D0%BA%D0%B0-Git))
-2. Далее спускаемся в каталог ./registrator и запускаем скрипт `gd_get.py` с помощью команды:  
-```python gd_get.py```  
-(он докачает тяжелые файлы из гугл диска)
+2. Далее спускаемся в каталог ./registrator и распаковываем там архив с моделями и данными - [архив](https://drive.google.com/file/d/1JdcY6vHkol2yRItcTe3xKW8vJb48ZYDz/view?usp=sharing) (ВАЖНО! путь до каталогов models и data должен быть ./registrator/models и ./registrator/data соответственно)
 3. Установить виртуальное окружение и активировать его:  
 ```python -m venv .env```  
 ```\.env\Scripts\activate```  

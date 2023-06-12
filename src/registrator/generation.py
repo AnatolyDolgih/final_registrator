@@ -1,27 +1,18 @@
 # Прописываем путь к моделям  
 import os
-pathToModels = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../models/'))
-
-# Модель для генерации диалога о заселении в отель
 import math
-import re
-import spacy
 import torch
 import torch.nn as nn
 import params as p
 
 from torch import Tensor
 from torch.nn import Transformer
-from os.path import exists
-from torch.utils.data import Dataset
-from torchtext.vocab import build_vocab_from_iterator
 from typing import List
 from torchtext.data.utils import get_tokenizer
 from transformers import AutoModelForCausalLM, AutoTokenizer
 from transformers import BertTokenizer, BertForSequenceClassification
 
-
-
+pathToModels = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../models/'))
 
 def filter(input_text):
     input_text = input_text.lower()

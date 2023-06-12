@@ -1,6 +1,5 @@
 import socket
 from datetime import datetime
-import time
 import csv
 import os
 import sys
@@ -59,7 +58,8 @@ while True:
 
     host = socket.gethostname()
     print(host)
-    server_sock.bind(("10.4.34.123", 1080))
+    ip_address = socket.gethostbyname(host)
+    server_sock.bind((ip_address, 1080))
     server_sock.listen(5)
     print("Server was run")
     client_sock, addr = server_sock.accept()
